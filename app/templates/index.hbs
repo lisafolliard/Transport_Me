@@ -1,17 +1,13 @@
-<h1>Transport Me!</h1>
+<h1>Ask questions and get answers from locals on the quickest and most pleasant ways to get from point A to point B</h1>
 
-<p>Transport Me! is a site where you can ask questions and get answers from locals on the quickest and most pleasant way to get from point A to point B</p>
-
-
+<br>
 <div class="container">
   <div class="row">
-
     <ul>
       {{#each model as |question|}}
         {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
       {{/each}}
     </ul>
-
   </div>
 </div>
 

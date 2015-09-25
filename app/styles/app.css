@@ -3,39 +3,41 @@ ul {
   color: black;
 }
 
-li {
-  color: black;
-}
-
-.container, .col-xs-6, .row, table, tr, li {
-  color: black;
-}
-
 body {
   background: url('nystreet.jpg') no-repeat fixed; background-position: 50% 70%;
 }
 
 .jumbotron {
   text-align: center;
-  color: #18bc9c;
+  color: black;
+  /*color: #18bc9c;*/
   padding: 20px;
-
 }
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+.jumbotron h1 {
+  font-size: 25px;
+}
+
 h2 {
   font-family: 'Caveat', cursive;
   font-size: 40px;
 }
 
-h1  {
+h3 {
+  color: #a8a6a7;
   font-family: 'Caveat', cursive;
-  font-size: 55px;
+  font-size: 50px;
 }
 
 .jumbotron p {
   color: black;
   font-size: 17px;
-}
-
-.jumbotron .table tr li {
-  color: black;
 }
