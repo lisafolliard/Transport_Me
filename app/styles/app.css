@@ -1,3 +1,17 @@
 ul {
   list-style-type: none;
 }
+
+body {
+  background-color: olive;
+  /*background: url('bridge.jpg') no-repeat center center fixed;*/
+  background: url('bridge.jpg') center left;
+
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+h1  {
+font-family: 'Caveat', cursive;}
