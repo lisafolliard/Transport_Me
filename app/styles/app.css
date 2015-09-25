@@ -1,17 +1,26 @@
 ul {
   list-style-type: none;
+  color: black;
 }
 
 body {
   background-color: olive;
   /*background: url('bridge.jpg') no-repeat center center fixed;*/
-  background: url('bridge.jpg') center left;
-
+  /*background: url('bridge.jpg') center left;*/
+  background: url('nystreet.jpg') no-repeat fixed; background-position: 50% 70%;
 }
 
 .jumbotron {
   text-align: center;
+  color: #18bc9c;
+
 }
 
 h1  {
-font-family: 'Caveat', cursive;}
+  font-family: 'Caveat', cursive;
+  font-size: 55px;
+}
+
+p {
+  color: black;
+}
