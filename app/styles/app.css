@@ -7,6 +7,9 @@ body {
   background: url('nystreet.jpg') no-repeat fixed; background-position: 50% 70%;
 }
 
+.navbar {
+  padding-left: 20px;
+}
 .jumbotron {
   text-align: center;
   color: black;
@@ -23,7 +26,7 @@ a:hover {
 }
 
 .jumbotron h1 {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 h2 {
