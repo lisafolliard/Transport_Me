@@ -2,10 +2,17 @@
 
 <p>This is a site where you can ask questions and get answers from locals on the quickest and most pleasant way to get from point A to point B</p>
 
-<ul>
-  {{#each model as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-  {{/each}}
-</ul>
+
+<div class="container">
+  <div class="row">
+
+    <ul>
+      {{#each model as |question|}}
+        {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+      {{/each}}
+    </ul>
+
+  </div>
+</div>
 
 {{new-question save2="save3"}}

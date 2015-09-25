@@ -1,6 +1,12 @@
-<li>{{question.content}} <br>
-  asked by {{question.author}}
+<div class="col-xs-6">
+  <table class="table">
+    <tr>
+      <li>{{#link-to 'question' question.id}}{{question.content}} asked by {{question.author}} {{/link-to}}
 
-{{update-question question=question update="update"}}
-<button {{action 'delete' question}}>Delete</button>
-</li>
+      {{update-question question=question update="update"}}
+      <button {{action 'delete' question}}>Delete</button>
+
+      </li>
+    </tr>
+  </table>
+</div>
