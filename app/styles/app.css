@@ -3,10 +3,15 @@ ul {
   color: black;
 }
 
+li {
+  color: black;
+}
+
+.container, .col-xs-6, .row, table, tr, li {
+  color: black;
+}
+
 body {
-  background-color: olive;
-  /*background: url('bridge.jpg') no-repeat center center fixed;*/
-  /*background: url('bridge.jpg') center left;*/
   background: url('nystreet.jpg') no-repeat fixed; background-position: 50% 70%;
 }
 
@@ -16,12 +21,21 @@ body {
   padding: 20px;
 
 }
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
 
 h1  {
   font-family: 'Caveat', cursive;
   font-size: 55px;
 }
 
-p {
+.jumbotron p {
+  color: black;
+  font-size: 17px;
+}
+
+.jumbotron .table tr li {
   color: black;
 }
