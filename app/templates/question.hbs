@@ -2,9 +2,12 @@
 
 {{single-question question=model}}
 
+
  {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
   {{/each}}
+
+<!-- {{model.author.name}} -->
 
 {{new-answer question=model}}
 
