@@ -1,3 +1,11 @@
 <h1>{{model.content}}</h1>
 
 {{single-question question=model}}
+
+ {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+
+{{new-answer question=model}}
+
+<!-- update="update" destroyAnswer="destroyAnswer" -->
