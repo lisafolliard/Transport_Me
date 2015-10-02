@@ -2,9 +2,10 @@
   color: #fed42a;
 }
 
-.navbar-right {
-  margin-right: -15px;
+h2:hover {
+  color: #fed42a;
 }
+
 .question {
   padding-top: 10px;
 }
@@ -54,9 +55,6 @@ a:hover {
 
 h2 {
   color: #d2cbce;
-  /*color: #fee773;
-  color: #fed42a;
-  color: #f6f2f2;*/
   font-family: 'Caveat', cursive;
   font-size: 40px;
   margin-top: -15px;
