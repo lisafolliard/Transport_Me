@@ -1,41 +1,25 @@
-<ul>
-  <li>{{model.content}}</li>
-  <li>asked by {{model.author}}</li>
-  <li><i>{{model.notes}}</i></li>
-</ul>
+<div class='question'>
+  <ul>
+    <li>{{model.content}}</li>
+    <li>asked by {{model.author}}</li>
+    <li><i>{{model.notes}}</i></li>
+  </ul>
+</div>
 
 {{update-question update='update' question=model}}
 
 <br>
 <br>
-<br>
-
-<!-- {{new-answer saveAnswer='saveAnswer' question=model}} -->
-
-<!-- {{#each model.answers as |answer|}}
-<ul>
-  <li>{{answer.response}}</li>
-  <li>Added by: {{answer.name}} on {{current-date}}</li>
-</ul>
-
-<button {{action 'deleteAnswer' answer}}>Delete</button>
-{{/each}} -->
 
 <div class="panel panel-default">
-
-
-  <!-- <div class="panel-heading">Answers</div> -->
   <div class="panel-body">
-
     {{new-answer saveAnswer='saveAnswer' question=model}}
-      <br>
+    <br>
     <p>
       {{#each model.answers as |answer|}}
-      <ul>
-        <li>{{answer.response}} Submitted by {{answer.name}} on {{current-date}}   <button class="btn btn-default btn-xs"{{action 'deleteAnswer' answer}}>Delete</button></li>
-      </ul>
-
-      <!-- <button class="btn btn-default btn-xs"{{action 'deleteAnswer' answer}}>Delete</button> -->
+        <ul>
+          <li>{{answer.response}} Submitted by {{answer.name}} on {{current-date}} <button class="btn btn-default btn-xs"{{action 'deleteAnswer' answer}}>Delete</button></li>
+        </ul>
       {{/each}}
     </p>
   </div>
