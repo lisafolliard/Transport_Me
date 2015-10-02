@@ -14,7 +14,6 @@ export default Ember.Component.extend({
         question: this.get('question'),
       };
       this.set('addNewAnswer', false);
-      debugger
       this.sendAction('saveAnswer', params);
     }
   }
