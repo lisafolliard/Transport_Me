@@ -12,6 +12,7 @@
 
 {{#each model.answers as |answer|}}
 {{answer.response}} by {{answer.name}}
+<button {{action 'deleteAnswer' answer}}>Delete</button>
 {{/each}}
 
 
