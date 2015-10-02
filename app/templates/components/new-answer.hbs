@@ -4,7 +4,7 @@
     <form>
       <div class="form-group">
         <label for="response">Answer</label>
-        {{textarea value=response id="response" class="form-control"}}
+        {{input value=response id="response" class="form-control"}}
       </div>
 
       <div class="form-group">
@@ -12,7 +12,7 @@
         {{input value=name id="name" class="form-control"}}
       </div>
 
-      <button class="btn btn-default btn-xs" {{action 'saveAnswer'}}>Save</button>
+      <button class="btn btn-default btn-sm" {{action 'saveAnswer'}}>Save</button>
 
     </form>
   </div>

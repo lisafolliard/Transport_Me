@@ -1,14 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: "span",
+  // tagName: "span",
   updateQuestionForm: false,
 
   actions: {
     updateQuestionForm() {
       this.set('updateQuestionForm', true);
     },
-    
+
     update(question) {
       var params = {
         content: this.get('content'),

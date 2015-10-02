@@ -2,11 +2,23 @@
 
 <br>
 
-{{#each model as |question|}}
-  {{#link-to 'question' question.id}}
-  {{question.content}} {{/link-to}} by {{question.author}} on {{current-date}}
-  <button  {{action 'delete' question}}>Delete</button>
-  {{/each}}
+<div class='container'>
+  <div class="row">
+    <div class='col-lg-12'>
+      <table>
+        <tr>
+      {{#each model as |question|}}
+        <li>
+          <td>{{#link-to 'question' question.id}}
+          {{question.content}} {{/link-to}} Asked by {{question.author}}</td>
+          <!-- <button  {{action 'delete' question}}>Delete</button> -->
+        </li>
+      {{/each}}
+    </tr>
+    </table>
+    </div>
+  </div>
+</div>
 
   <br>
 

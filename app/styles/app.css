@@ -1,6 +1,7 @@
-ul {
+li {
   list-style-type: none;
   color: black;
+  font-size: 15px;
 }
 
 body {
@@ -10,11 +11,20 @@ body {
 .navbar {
   padding-left: 20px;
 }
+
 .jumbotron {
   text-align: center;
   color: black;
-  /*color: #18bc9c;*/
   padding: 20px;
+}
+
+.jumbotron h1 {
+  font-size: 22px;
+}
+
+.jumbotron p {
+  color: black;
+  font-size: 17px;
 }
 
 a {
@@ -23,10 +33,6 @@ a {
 
 a:hover {
   color: grey;
-}
-
-.jumbotron h1 {
-  font-size: 20px;
 }
 
 h2 {
@@ -40,7 +46,11 @@ h3 {
   font-size: 50px;
 }
 
-.jumbotron p {
-  color: black;
-  font-size: 17px;
+.signature {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+}
+
+p.signature {
+  font-size: 30px;
 }

@@ -1,16 +1,42 @@
-{{model.content}}
-
 <ul>
-  Author: {{model.author}}
-  <br>
-  Notes: {{model.notes}}
+  <li>{{model.content}}</li>
+  <li>asked by {{model.author}}</li>
+  <li><i>{{model.notes}}</i></li>
 </ul>
 
 {{update-question update='update' question=model}}
 
-{{new-answer saveAnswer='saveAnswer' question=model}}
+<br>
+<br>
+<br>
 
-{{#each model.answers as |answer|}}
-{{answer.response}} by {{answer.name}} on {{current-date}}
+<!-- {{new-answer saveAnswer='saveAnswer' question=model}} -->
+
+<!-- {{#each model.answers as |answer|}}
+<ul>
+  <li>{{answer.response}}</li>
+  <li>Added by: {{answer.name}} on {{current-date}}</li>
+</ul>
+
 <button {{action 'deleteAnswer' answer}}>Delete</button>
-{{/each}}
+{{/each}} -->
+
+<div class="panel panel-default">
+
+
+  <!-- <div class="panel-heading">Answers</div> -->
+  <div class="panel-body">
+
+    {{new-answer saveAnswer='saveAnswer' question=model}}
+      <br>
+    <p>
+      {{#each model.answers as |answer|}}
+      <ul>
+        <li>{{answer.response}} Submitted by {{answer.name}} on {{current-date}}   <button class="btn btn-default btn-xs"{{action 'deleteAnswer' answer}}>Delete</button></li>
+      </ul>
+
+      <!-- <button class="btn btn-default btn-xs"{{action 'deleteAnswer' answer}}>Delete</button> -->
+      {{/each}}
+    </p>
+  </div>
+</div>
