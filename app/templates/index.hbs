@@ -4,7 +4,7 @@
 
 {{#each model as |question|}}
   {{#link-to 'question' question.id}}
-  {{question.content}} {{/link-to}} by {{question.author}}
+  {{question.content}} {{/link-to}} by {{question.author}} on {{current-date}}
   <button  {{action 'delete' question}}>Delete</button>
   {{/each}}
 

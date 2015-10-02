@@ -11,19 +11,6 @@
 {{new-answer saveAnswer='saveAnswer' question=model}}
 
 {{#each model.answers as |answer|}}
-{{answer.response}} by {{answer.name}}
+{{answer.response}} by {{answer.name}} on {{current-date}}
 <button {{action 'deleteAnswer' answer}}>Delete</button>
 {{/each}}
-
-
-<!-- <h1>{{model.content}}</h1>
-
-{{single-question question=model}}
-
-
- {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
-
-
-{{new-answer question=model}} -->
