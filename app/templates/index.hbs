@@ -1,17 +1,16 @@
-<h1>Ask questions and get answers from locals on the quickest and most pleasant ways to get from point A to point B</h1>
-<br>
-<div class='container'>
-      <table>
-        <tr>
-          {{#each model as |question|}}
-            <li>
-              <td>{{#link-to 'question' question.id}}
-              {{question.content}} {{/link-to}} Asked by    {{question.author}}</td>
-            </li>
-          {{/each}}
-        </tr>
-      </table>
-</div>
+<h1>Ask transportation-related questions and get answers from locals!</h1>
+  <div class='container'>
+        <table>
+          <tr>
+            {{#each model as |question|}}
+              <li>
+                <td>{{#link-to 'question' question.id}}
+                {{question.content}} {{/link-to}} Asked by    {{question.author}}</td>
+              </li>
+            {{/each}}
+          </tr>
+        </table>
+  </div>
 <br>
 
 {{new-question save2='save3'}}
