@@ -5,7 +5,7 @@
             {{#each model as |question|}}
               <li>
                 <td>{{#link-to 'question' question.id}}
-                {{question.content}} {{/link-to}} &nbsp; Asked by    {{question.author}}</td>
+                {{question.content}} {{/link-to}} &nbsp; Asked by {{question.author}}</td>
               </li>
             {{/each}}
           </tr>
