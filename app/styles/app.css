@@ -18,7 +18,7 @@ li {
 }
 
 body {
-  background: url('nystreet.jpg') no-repeat fixed; background-position: 50% 70%;
+  background: url('https://images.unsplash.com/9/barcelona-traffic.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2c05e4ccef2b2d6112a78bc0f947253d') no-repeat fixed; background-position: 50% 70%;
 	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
 
@@ -32,6 +32,10 @@ body {
   color: black;
   padding-top: 10px;
 }
+
+/*.jumbotron li {
+  text-align: left;
+}*/
 
 .jumbotron h1 {
   font-size: 27px;
