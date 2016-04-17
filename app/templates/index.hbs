@@ -6,7 +6,10 @@
             {{#each model as |question|}}
               <li>
                 <td>{{#link-to 'question' question.id}}
-                {{question.content}} {{/link-to}} &nbsp; Asked by {{question.author}}</td>
+                {{question.content}} {{/link-to}} &nbsp; Asked by {{question.author}}
+                <button class="btn btn-default btn-xs"{{action 'deleteQuestion' question}}>
+                  <span class='glyphicon glyphicon-trash'></span></button>
+              </td>
               </li>
             {{/each}}
           </tr>

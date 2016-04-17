@@ -17,7 +17,9 @@ h2 {
 }*/
 
 .question {
-  padding-top: 10px;
+  padding-top: 20px;
+  /*padding-right: 5%;*/
+  /*padding-left: 5%;*/
 }
 
 .question ul li {
@@ -32,7 +34,9 @@ li {
 }
 
 body {
-  background: url('https://images.unsplash.com/9/barcelona-traffic.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2c05e4ccef2b2d6112a78bc0f947253d') no-repeat fixed; background-position: 50% 70%;
+  background: url('https://images.unsplash.com/9/barcelona-traffic.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2c05e4ccef2b2d6112a78bc0f947253d') no-repeat fixed;
+  background-size: cover; background-position: 50% 70%;
+  overflow-x: hidden;
 	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
 
@@ -44,11 +48,10 @@ body {
 .jumbotron {
   text-align: center;
   color: black;
+  /*margin-top: -30px;*/
   padding-top: 10px;
-
   padding-left: 10%;
   padding-right: 10%;
-
 }
 
 .jumbotron li {
@@ -87,10 +90,16 @@ p.about {
 p.signature {
   font-size: 30px;
   font-family: 'Caveat', cursive;
+  margin-bottom: -10px;
 }
 
 .form-control {
   width: 450px;
   margin: auto;
   align: center;
+}
+
+.panel-body {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

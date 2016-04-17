@@ -13,14 +13,16 @@
 
 <div class="panel panel-default">
   <div class="panel-body">
-    {{new-answer saveAnswer='saveAnswer' question=model}}
-    <br>
     <p>
       {{#each model.answers as |answer|}}
         <ul>
-          <li>{{answer.response}} Submitted by {{answer.name}} on {{current-date}} <button class="btn btn-default btn-xs"{{action 'deleteAnswer' answer}}>Delete</button></li>
+          <li>{{answer.response}} Submitted by {{answer.name}} on {{current-date}}
+            <button class="btn btn-default btn-xs"{{action 'deleteAnswer' answer}}><span class='glyphicon glyphicon-trash'></span></button>
+          </li>
         </ul>
       {{/each}}
     </p>
+
+    {{new-answer saveAnswer='saveAnswer' question=model}}
   </div>
 </div>
