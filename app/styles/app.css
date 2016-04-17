@@ -3,23 +3,14 @@
 }
 
 h2 {
-  /*color: #d2cbce;*/
-  /*font-family: 'Caveat', cursive;*/
-
   font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
   font-size: 26px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-/*h2:hover {
-  color: #fed42a;
-}*/
-
 .question {
   padding-top: 20px;
-  /*padding-right: 5%;*/
-  /*padding-left: 5%;*/
 }
 
 .question ul li {
@@ -48,7 +39,6 @@ body {
 .jumbotron {
   text-align: center;
   color: black;
-  /*margin-top: -30px;*/
   padding-top: 10px;
   padding-left: 10%;
   padding-right: 10%;
@@ -64,8 +54,6 @@ body {
   letter-spacing: 3px;
   font-family: 'Caveat', cursive;
   color: #8caba8;
-
-	/*font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;*/
 }
 
 .jumbotron p {
