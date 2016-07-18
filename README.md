@@ -1,6 +1,6 @@
 # Transport Me
 
-#### Version 1.0, 2 October 2015
+#### October 2, 2015
 
 A website where users can ask transportation-related questions and get answers from locals.
 
